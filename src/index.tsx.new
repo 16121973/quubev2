@@ -1,0 +1,348 @@
+// Route: Cas d'usage
+app.get('/cas-usage', (c) => {
+  return c.render(
+    <>
+      <div class="page-hero">
+        <div class="container">
+          <h1>Cas d'usage IA par métier</h1>
+          <p>Des gains concrets, mesurés sur le terrain dans toutes les fonctions de la santé</p>
+        </div>
+      </div>
+
+      <section class="section-light">
+        <div class="container">
+          {/* System d'onglets métiers */}
+          <div class="tabs-container">
+            <div class="tabs-nav fade-in">
+              <button class="tab-button active" data-tab="dg">Direction Générale</button>
+              <button class="tab-button" data-tab="finance">Finance & Gestion</button>
+              <button class="tab-button" data-tab="rh">Ressources Humaines</button>
+              <button class="tab-button" data-tab="qualite">Qualité & Conformité</button>
+              <button class="tab-button" data-tab="soins">Soins & Médical</button>
+              <button class="tab-button" data-tab="educatif">Éducatif & Médico-social</button>
+              <button class="tab-button" data-tab="transverse">Fonctions Transverses</button>
+            </div>
+
+            {/* Onglet 1 - Direction Générale */}
+            <div id="dg" class="tab-panel active">
+              <div class="case-example fade-in">
+                <h3>Exemple concret</h3>
+                <p><strong>Projet stratégique livré en 8 semaines au lieu de 4 mois</strong></p>
+                <p>Plan stratégique 2025-2030 d'un établissement : diagnostic, benchmark, 5 axes, plan d'action chiffré.</p>
+              </div>
+              
+              <h3 style="margin-bottom: 24px;">Cas d'usage Direction Générale & Stratégie</h3>
+              <div class="cards-grid">
+                <div class="card fade-in">
+                  <div><span class="badge badge-roi">ROI++</span><span class="badge badge-auto">Automatisation</span></div>
+                  <h4>Plan stratégique / Projet d'établissement</h4>
+                  <p>Rédaction complète avec diagnostic, SWOT, axes, objectifs, plan d'action. <strong>Gain : 50-70%</strong></p>
+                </div>
+                
+                <div class="card fade-in">
+                  <div><span class="badge badge-roi">ROI++</span></div>
+                  <h4>Business plan & Études de faisabilité</h4>
+                  <p>Analyse de marché, modèle économique, prévisionnel financier 3-5 ans. <strong>Gain : 60%</strong></p>
+                </div>
+                
+                <div class="card fade-in">
+                  <div><span class="badge badge-auto">Automatisation</span></div>
+                  <h4>Projet associatif</h4>
+                  <p>Rédaction collaborative, benchmark secteur, valeurs, ambitions. <strong>Délai divisé par 3</strong></p>
+                </div>
+                
+                <div class="card fade-in">
+                  <div><span class="badge badge-data">Data</span></div>
+                  <h4>Études de diversification</h4>
+                  <p>Opportunités de développement, analyse concurrentielle, scénarios. <strong>Gain : 50%</strong></p>
+                </div>
+              </div>
+            </div>
+
+            {/* Onglet 2 - Finance */}
+            <div id="finance" class="tab-panel">
+              <div class="case-example fade-in">
+                <h3>Exemple concret</h3>
+                <p><strong>Rapports DGOS/ARS produits en 5 jours au lieu de 3 semaines</strong></p>
+                <p>Synthèse annuelle d'activité : indicateurs, analyses, recommandations réglementaires.</p>
+              </div>
+              
+              <h3 style="margin-bottom: 24px;">Cas d'usage Finance & Gestion</h3>
+              <div class="cards-grid">
+                <div class="card fade-in">
+                  <div><span class="badge badge-roi">ROI++</span><span class="badge badge-conformite">Conformité</span></div>
+                  <h4>Rapports réglementaires (DGOS, ARS)</h4>
+                  <p>Automatisation extraction données + rédaction conforme. <strong>Gain : 70%</strong></p>
+                </div>
+                
+                <div class="card fade-in">
+                  <div><span class="badge badge-auto">Automatisation</span></div>
+                  <h4>Budgets prévisionnels (EPRD, CPOM)</h4>
+                  <p>Construction budgétaire, hypothèses, analyses d'écarts. <strong>Gain : 50%</strong></p>
+                </div>
+                
+                <div class="card fade-in">
+                  <div><span class="badge badge-data">Data</span></div>
+                  <h4>Analyses financières & Tableaux de bord</h4>
+                  <p>KPI, suivi mensuel, commentaires automatisés. <strong>3 jours/mois économisés</strong></p>
+                </div>
+                
+                <div class="card fade-in">
+                  <div><span class="badge badge-roi">ROI++</span></div>
+                  <h4>Réponses Appels à Projets financiers</h4>
+                  <p>Montage dossiers AAP, budgets détaillés. <strong>Délai divisé par 2</strong></p>
+                </div>
+              </div>
+            </div>
+
+            {/* Onglet 3 - RH */}
+            <div id="rh" class="tab-panel">
+              <div class="case-example fade-in">
+                <h3>Exemple concret</h3>
+                <p><strong>120 fiches de poste créées en 1 semaine au lieu de 2 mois</strong></p>
+                <p>Refonte complète référentiel métiers pour fusion d'établissements.</p>
+              </div>
+              
+              <h3 style="margin-bottom: 24px;">Cas d'usage Ressources Humaines</h3>
+              <div class="cards-grid">
+                <div class="card fade-in">
+                  <div><span class="badge badge-roi">ROI++</span><span class="badge badge-auto">Automatisation</span></div>
+                  <h4>Fiches de poste & Référentiels métiers</h4>
+                  <p>Rédaction standardisée missions, compétences, profils. <strong>Gain : 80%</strong></p>
+                </div>
+                
+                <div class="card fade-in">
+                  <div><span class="badge badge-auto">Automatisation</span></div>
+                  <h4>Offres d'emploi & Sourcing candidats</h4>
+                  <p>Rédaction attractive, présélection CV, réponses candidats. <strong>Gain : 60%</strong></p>
+                </div>
+                
+                <div class="card fade-in">
+                  <div><span class="badge badge-roi">ROI++</span></div>
+                  <h4>Plans de formation & Référencement</h4>
+                  <p>Analyse besoins, catalogue, dossiers financeurs. <strong>Gain : 50%</strong></p>
+                </div>
+                
+                <div class="card fade-in">
+                  <div><span class="badge badge-data">Data</span></div>
+                  <h4>Entretiens annuels & GPEC</h4>
+                  <p>Synthèses, plans de carrière, suivi compétences. <strong>3 jours/mois économisés</strong></p>
+                </div>
+              </div>
+            </div>
+
+            {/* Onglet 4 - Qualité */}
+            <div id="qualite" class="tab-panel">
+              <div class="case-example fade-in">
+                <h3>Exemple concret</h3>
+                <p><strong>3 auto-évaluations ESSMS menées en parallèle sur 2 mois</strong></p>
+                <p>Analyse des 8 chapitres, preuves, plans d'action pour 3 établissements simultanés.</p>
+              </div>
+              
+              <h3 style="margin-bottom: 24px;">Cas d'usage Qualité & Conformité</h3>
+              <div class="cards-grid">
+                <div class="card fade-in">
+                  <div><span class="badge badge-conformite">Conformité</span><span class="badge badge-roi">ROI++</span></div>
+                  <h4>Auto-évaluations HAS / ESSMS</h4>
+                  <p>Analyse 8 chapitres, preuves, écarts, plans d'action. <strong>Délai divisé par 3</strong></p>
+                </div>
+                
+                <div class="card fade-in">
+                  <div><span class="badge badge-conformite">Conformité</span></div>
+                  <h4>Procédures & Protocoles</h4>
+                  <p>Rédaction documentaire, mises à jour réglementaires. <strong>Gain : 70%</strong></p>
+                </div>
+                
+                <div class="card fade-in">
+                  <div><span class="badge badge-data">Data</span></div>
+                  <h4>Gestion des risques (Document Unique)</h4>
+                  <p>Identification risques, cotation, plans de prévention. <strong>Gain : 50%</strong></p>
+                </div>
+                
+                <div class="card fade-in">
+                  <div><span class="badge badge-auto">Automatisation</span></div>
+                  <h4>Audits internes & Rapports d'inspection</h4>
+                  <p>Grilles d'audit, synthèses, plans d'amélioration. <strong>Gain : 60%</strong></p>
+                </div>
+              </div>
+            </div>
+
+            {/* Onglet 5 - Soins */}
+            <div id="soins" class="tab-panel">
+              <div class="case-example fade-in">
+                <h3>Exemple concret</h3>
+                <p><strong>Réduction de 40% du temps de rédaction des comptes-rendus RCP</strong></p>
+                <p>Automatisation synthèse discussions multidisciplinaires et recommandations.</p>
+              </div>
+              
+              <h3 style="margin-bottom: 24px;">Cas d'usage Soins & Médical</h3>
+              <div class="cards-grid">
+                <div class="card fade-in">
+                  <div><span class="badge badge-roi">ROI++</span><span class="badge badge-auto">Automatisation</span></div>
+                  <h4>Comptes-rendus RCP / Staff</h4>
+                  <p>Synthèse discussions, recommandations, traçabilité. <strong>Gain : 40%</strong></p>
+                </div>
+                
+                <div class="card fade-in">
+                  <div><span class="badge badge-conformite">Conformité</span></div>
+                  <h4>Protocoles de soins & Parcours patients</h4>
+                  <p>Rédaction evidence-based, références bibliographiques. <strong>Gain : 60%</strong></p>
+                </div>
+                
+                <div class="card fade-in">
+                  <div><span class="badge badge-data">Data</span></div>
+                  <h4>Revue bibliographique & Veille scientifique</h4>
+                  <p>Analyse littérature, synthèses thématiques, recommandations. <strong>Gain : 70%</strong></p>
+                </div>
+                
+                <div class="card fade-in">
+                  <div><span class="badge badge-auto">Automatisation</span></div>
+                  <h4>Programmes d'ETP (Éducation Thérapeutique)</h4>
+                  <p>Supports pédagogiques, fiches patients, évaluations. <strong>Gain : 50%</strong></p>
+                </div>
+              </div>
+            </div>
+
+            {/* Onglet 6 - Éducatif */}
+            <div id="educatif" class="tab-panel">
+              <div class="case-example fade-in">
+                <h3>Exemple concret</h3>
+                <p><strong>Supports FALC créés en minutes au lieu d'heures</strong></p>
+                <p>Adaptation automatique documents complexes en Facile À Lire et à Comprendre.</p>
+              </div>
+              
+              <h3 style="margin-bottom: 24px;">Cas d'usage Éducatif & Médico-social</h3>
+              <div class="cards-grid">
+                <div class="card fade-in">
+                  <div><span class="badge badge-roi">ROI++</span><span class="badge badge-auto">Automatisation</span></div>
+                  <h4>Supports pédagogiques FALC</h4>
+                  <p>Simplification langage, pictogrammes, accessibilité. <strong>Gain : 80%</strong></p>
+                </div>
+                
+                <div class="card fade-in">
+                  <div><span class="badge badge-conformite">Conformité</span></div>
+                  <h4>Projets personnalisés d'accompagnement</h4>
+                  <p>Rédaction objectifs, actions, évaluations. <strong>Gain : 50%</strong></p>
+                </div>
+                
+                <div class="card fade-in">
+                  <div><span class="badge badge-auto">Automatisation</span></div>
+                  <h4>Programmes d'activités & Ateliers</h4>
+                  <p>Fiches activités, progression pédagogique, supports. <strong>Gain : 60%</strong></p>
+                </div>
+                
+                <div class="card fade-in">
+                  <div><span class="badge badge-data">Data</span></div>
+                  <h4>Bilans éducatifs & Transmissions</h4>
+                  <p>Synthèses périodiques, analyses évolution, recommandations. <strong>Gain : 40%</strong></p>
+                </div>
+              </div>
+            </div>
+
+            {/* Onglet 7 - Transverse */}
+            <div id="transverse" class="tab-panel">
+              <div class="case-example fade-in">
+                <h3>Exemple concret</h3>
+                <p><strong>50+ comptes-rendus de réunions automatisés = 3 jours/mois économisés</strong></p>
+                <p>Transcription audio, structuration, diffusion pour toutes les instances.</p>
+              </div>
+              
+              <h3 style="margin-bottom: 24px;">Cas d'usage Fonctions Transverses</h3>
+              <div class="cards-grid">
+                <div class="card fade-in">
+                  <div><span class="badge badge-roi">ROI++</span><span class="badge badge-auto">Automatisation</span></div>
+                  <h4>Comptes-rendus de réunions</h4>
+                  <p>Transcription, structuration, diffusion automatisée. <strong>3 jours/mois économisés</strong></p>
+                </div>
+                
+                <div class="card fade-in">
+                  <div><span class="badge badge-auto">Automatisation</span></div>
+                  <h4>Communication interne & Newsletters</h4>
+                  <p>Rédaction articles, visuels, planification contenu. <strong>Gain : 60%</strong></p>
+                </div>
+                
+                <div class="card fade-in">
+                  <div><span class="badge badge-data">Data</span></div>
+                  <h4>Synthèses réglementaires & Veille juridique</h4>
+                  <p>Analyse textes, impacts, notes de synthèse. <strong>Gain : 70%</strong></p>
+                </div>
+                
+                <div class="card fade-in">
+                  <div><span class="badge badge-roi">ROI++</span></div>
+                  <h4>Gestion documentaire & Archivage</h4>
+                  <p>Classification, indexation, recherche sémantique. <strong>Gain : 50%</strong></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* CTA final */}
+          <div class="text-center fade-in" style="margin-top: 64px; padding-top: 64px; border-top: 1px solid #e5e7eb;">
+            <h2 style="margin-bottom: 24px;">Votre cas d'usage n'est pas listé ?</h2>
+            <p style="font-size: 1.125rem; color: var(--color-text-gray); margin-bottom: 32px; max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.7;">
+              Échangeons sur vos besoins spécifiques. Nous identifierons ensemble les cas d'usage IA les plus pertinents pour votre organisation.
+            </p>
+            <a href="/contact" class="btn btn-primary btn-large">Identifier vos cas d'usage</a>
+          </div>
+        </div>
+      </section>
+    </>,
+    { title: 'Cas d\'usage' }
+  )
+})
+
+// Route: Qui sommes-nous
+app.get('/a-propos', (c) => {
+  return c.render(
+    <>
+      <div class="page-hero">
+        <div class="container">
+          <h1>Qui sommes-nous</h1>
+          <p>Expertise santé et intelligence artificielle au service de votre transformation</p>
+        </div>
+      </div>
+      
+      <section class="section-light">
+        <div class="container">
+          <p style="text-align: center; font-size: 1.125rem;">Contenu À propos à venir...</p>
+        </div>
+      </section>
+    </>,
+    { title: 'Qui sommes-nous' }
+  )
+})
+
+// Route: Contact
+app.get('/contact', (c) => {
+  return c.render(
+    <>
+      <div class="page-hero">
+        <div class="container">
+          <h1>Contact</h1>
+          <p>Échangeons sur vos projets IA</p>
+        </div>
+      </div>
+      
+      <section class="section-light">
+        <div class="container">
+          <div style="max-width: 600px; margin: 0 auto; text-align: center;">
+            <p style="font-size: 1.125rem; margin-bottom: 32px;">
+              <strong>QUUBE×IA Santé</strong><br />
+              10 rue du Colisée<br />
+              75008 Paris
+            </p>
+            <p style="margin-bottom: 32px;">
+              <a href="mailto:contact@quube.fr" style="color: var(--color-accent); font-weight: 600;">contact@quube.fr</a>
+            </p>
+            <a href="https://calendly.com/quube" target="_blank" rel="noopener" class="btn btn-primary btn-large">
+              Prendre rendez-vous via Calendly
+            </a>
+          </div>
+        </div>
+      </section>
+    </>,
+    { title: 'Contact' }
+  )
+})
+
+export default app
